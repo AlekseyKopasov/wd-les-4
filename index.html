@@ -25,11 +25,706 @@
     </section>
 
     <section class="slide clear">
-      <h2 class="shout"></h2>
+      <h2 class="shout">CSS</h2>
+    </section>
+
+    <!-- TODO CSS: правила -->
+    <section class="slide">
+      <h2>Cascading Style Sheets (CSS) </h2>
+      <p><b>CSS (Каскадные Таблицы Стилей)</b> — это язык таблицы стилей</p>
+      <pre>
+        <code>.my-element {</code>
+          <code>  font-size: 18px;</code>
+          <code>  line-height: 1.5;</code>
+          <code>  color: crimson;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS: правила</h2>
+      <pre>
+        <code>.my-element {</code>
+          <code>  font-size: 18px;</code>
+          <code>  line-height: 1.5;</code>
+          <code>  color: crimson;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS: правила</h2>
+      <pre>
+        <code class="mark">.my-element { // Селектор (Selector)</code>
+          <code>  font-size: 18px;</code>
+          <code>  line-height: 1.5;</code>
+          <code>  color: crimson;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide ">
+      <h2>CSS: правила</h2>
+      <pre>
+        <code>.my-element {</code>
+          <code class="mark">  font-size: 18px;  // Объявление (Declaration)</code>
+          <code>  line-height: 1.5;</code>
+          <code>  color: crimson;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS: правила</h2>
+      <pre>
+        <code>.my-element {</code>
+          <code>  <mark>font-size</mark>: 18px;  // Свойство (Property) </code>
+          <code>  <mark>line-height</mark>: 1.5; // Свойство (Property) </code>
+          <code>  <mark>color</mark>: crimson; // Свойство (Property) </code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS: правила</h2>
+      <pre>
+        <code>.my-element {</code>
+          <code>  font-size: <mark>18px</mark>;  // Значение свойства (Property value)</code>
+          <code>  line-height: <mark>1.5</mark>; // Значение свойства (Property value)</code>
+          <code>  color: <mark>crimson</mark>; // Значение свойства (Property value)</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS: правила</h2>
+      <div class="columns two">
+        <pre>
+          <code>.my-element <mark class="important">{</mark></code>
+            <code>  font-size: 18px;</code>
+            <code>  line-height: 1.5;</code>
+            <code>  color: crimson;</code>
+          <code><mark class="important">}</mark></code>
+        </pre>
+        <ol>
+          <li>Набор правил должен быть обёрнут в фигурные скобки - <mark>{}</mark></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>CSS: правила</h2>
+      <div class="columns two">
+        <pre>
+          <code>.my-element {</code>
+            <code>  font-size <mark class="important">:</mark> 18px;</code>
+            <code>  line-height <mark class="important">:</mark> 1.5;</code>
+            <code>  color <mark class="important">:</mark> crimson;</code>
+          <code>}</code>
+        </pre>
+        <ol>
+          <li>Набор правил должен быть обёрнут в фигурные скобки - <mark>{}</mark></li>
+          <li>Cвойство от его значений отделяется двоеточием - <mark>:</mark></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>CSS: правила</h2>
+      <div class="columns two">
+        <pre>
+          <code>.my-element {</code>
+            <code>  font-size: 18px <mark class="important">;</mark></code>
+            <code>  line-height: 1.5 <mark class="important">;</mark></code>
+            <code>  color: crimson <mark class="important">;</mark></code>
+          <code>}</code>
+        </pre>
+        <ol>
+          <li>Набор правил должен быть обёрнут в фигурные скобки - <mark>{}</mark></li>
+          <li>Cвойство от его значений отделяется двоеточием - <mark>:</mark></li>
+          <li>Объвление заканчивается точкой с запятой - <mark>;</mark></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TODO CSS: селекторы -->
+    <section class="slide">
+      <h2>CSS: селекторы</h2>
+      <ol>
+        <li>Селектор элемента <b>(p)</b></li>
+        <li>ID селектор <b>(#my-id)</b></li>
+        <li>Селектор класса <b>(.my-class)</b></li>
+        <li>Селектор атрибута <b>(img[src])</b></li>
+        <li>Селектор псевдокласса <b>(a:hover)</b></li>
+      </ol>
+    </section>
+
+    <!-- TODO CSS: комбинирование и группировка -->
+    <section class="slide">
+      <h2>CSS селекторы: комбинирование и группировка</h2>
+      <ol>
+        <li><b>Группировка</b>: .element1, .element2</li>
+        <li><b>Объединение</b>: .class1.class2</li>
+        <li><b>Потомки</b>: .element1 .element2 </li>
+        <li><b>Непосредственно вложенные</b>: .element1 > .element2</li>
+        <li><b>Смежные</b>: .element1 + .element2</li>
+        <li><b>Последующие</b>: .element1 ~ .element2</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>CSS селекторы: группировка</h2>
+      <mark>Селекторы записываются через запятую</mark>
+      <div class="columns two justify-end">
+        <pre>
+          <code>.element1 { color: red; }</code>
+          <code>.element2 { color: red; }</code>
+          <code>.element3 { color: red; }</code>
+        </pre>
+        <pre>
+            <code>.element1,</code>
+            <code>.element2,</code>
+            <code>.element3 {</code>
+              <code>  color: red;</code>
+           <code>}</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>CSS селекторы: объединение</h2>
+      <mark>Селекторы записываются слитно</mark>
+      <pre>
+        <code>.class1<mark class="important">.</mark>class2 {</code>
+          <code>  color: red;</code>
+        <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS селекторы: потомки</h2>
+      <mark>Селекторы записываются последовательно через пробел</mark>
+      <pre>
+        <code>.block h2 {</code>
+          <code>  color: red;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS селекторы: непосредственно вложенные</h2>
+      <mark>Селекторы разделяются знаком <b>></b></mark>
+      <pre>
+        <code>.block > h2 {</code>
+          <code>  color: red;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS селекторы: cмежные</h2>
+      <mark>Селекторы разделяются знаком <b>+</b></mark>
+      <pre>
+        <code>.block1 + .block2 {</code>
+          <code>  color: red;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>CSS селекторы: последующие</h2>
+      <mark>Селекторы разделяются знаком <b>~</b></mark>
+      <pre>
+        <code>.block1:hover ~ .block2 {</code>
+          <code>  color: red;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <!-- TODO CSS: специфичность, наследование, каскад -->
+    <section class="slide">
+      <h2>CSS: специфичность, наследование, каскад</h2>
+
+      <p><b>Каскад</b> — к одному и тому же элементу может применяться несколько CSS-правил (наборов CSS-свойств). Каскадирование определяет, какие именно свойства из всех возможных источников будут применены к элементу.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Порядок примениения CSS-свойств</h2>
+
+      <ol>
+        <li>важность</li>
+        <li>специфичность</li>
+        <li>порядок исходного кода</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>Специфичность</h2>
+      <img src="/img/specif.png" width="100%" alt="">
+      <p>Изображение взято с сайта <a href="https://webformyself.com/koncepcii-css-edinoe-rukovodstvo/" target="_blank">WebforMyself.com</a></p>
+    </section>
+
+    <section class="slide">
+      <h2>Специфичность</h2>
+      <span><a href="https://polypane.app/css-specificity-calculator/" target="_blank">Specificity calculator</a> - онлайн калькулятор подсчета специфичности</span>
+    </section>
+
+    <section class="slide">
+      <h2>Специфичность</h2>
+      <p><mark class="important">!important</mark> — нарушает естественную работу специфичности и каскада</p>
+      <pre>
+        <code>.elem {</code>
+          <code>  color: red;</code>
+        <code>}</code>
+
+        <code>p {</code>
+          <code>  color: rebeccapurple <mark>!important;</mark></code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Наследование</h2>
+      <p><b>Наследование</b> — механизм, с помощью которого значения свойств элемента-родителя передаются его элементам-потомкам</p>
+      <pre>
+        <code>&lt;html&gt;</code>
+          <code>  &lt;head&gt;&lt;/head&gt;</code>
+          <code>  &lt;body&gt;</code>
+            <code>    &lt;p class=&quot;text&quot;&gt;Выделенная &lt;span&gt;подстрока&lt;/span&gt;&lt;/p&gt;</code>
+          <code>  &lt;/body&gt;</code>
+        <code>&lt;/html&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Наследование</h2>
+
+      <div class="columns two">
+        <div>
+          <h3>Наследуемые</h3>
+          <ol>
+            <li>font-size</li>
+            <li>font-family</li>
+            <li>font-style</li>
+            <li>color</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Ненаследуемые</h3>
+          <ol>
+            <li>background</li>
+            <li>border</li>
+            <li>padding</li>
+            <li>margin</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO CSS: переменные и функции -->
+    <section class="slide">
+      <h2>Переменные и функции</h2>
+
+      <p><b><mark>Custom property</mark></b> — CSS переменные (пользовательские CSS-свойства)</p>
+      <div class="columns two justify-end">
+        <div>
+          <p>Объявление:</p>
+          <pre>
+            <code>element {</code>
+              <code>  --main-bg-color: black;</code>
+            <code>}</code>
+          </pre>
+        </div>
+        <div>
+          <p>Использование</p>
+          <pre>
+            <code>.element {</code>
+              <code>  background-color: var(--main-bg-color);</code>
+            <code>}</code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Переменные и функции</h2>
+
+      <mark>Функции в CSS</mark>
+      <ol>
+        <li><b>url()</b> — для загрузки ресурсов</li>
+        <li><b>attr()</b> — позволяет брать содержимое атрибута</li>
+        <li><b>min()</b> — возвращает минимальное значение из указанных</li>
+        <li><b>calc()</b> — позволяет производить математические вычисления</li>
+        <li><b>linear-gradient()</b> — для задания фона в виде линейного градиента</li>
+        <li><b>var()</b> — для использования кастомных свойств</li>
+      </ol>
+    </section>
+
+    <!-- TODO Боксовая модель -->
+    <section class="slide">
+      <h2>Боксовая модель</h2>
+      <img src="/img/box-model.png" width="100%" height="100%" alt="" style="max-width: 50%;height: auto;">
+      <p>Изображение взято с сайта <a href="https://doka.guide/css/box-model/" target="_blank">doka.guide</a></p>
+    </section>
+
+    <section class="slide">
+      <h2>Типы боксов</h2>
+      <ol>
+        <li><b>блочные</b> — display: block</li>
+        <li><b>строчные</b> — display: inline</li>
+        <li><b>блочно-строчные</b> — display: inline-block</li>
+        <li><b>гибкие или флексовые (флексы)</b> — display: flex</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>Блочный бокс</h2>
+      <div class="columns two">
+        <ol>
+          <li>div</li>
+          <li>header</li>
+          <li>footer</li>
+        </ol>
+        <ol>
+          <li>section</li>
+          <li>h1...h6</li>
+          <li>p</li>
+        </ol>
+      </div>
+      <pre>
+        <code>.element {</code>
+          <code>  display: block;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Строчный  бокс</h2>
+      <div class="columns two">
+        <ol>
+          <li>a</li>
+          <li>span</li>
+          <li>button</li>
+        </ol>
+        <ol>
+          <li>strong</li>
+          <li>em</li>
+          <li>b</li>
+        </ol>
+      </div>
+      <pre>
+        <code>.element {</code>
+          <code>  display: inline;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Блочно-строчный бокс</h2>
+      <p><b>Блочно-строчные</b> боксы сочетают в себе особенности и блочных и строчных боксов. </p>
+      <pre>
+        <code>.element {</code>
+          <code>  display: inline-block;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Флексбокс</h2>
+      <p><b>Флексы</b> — основной инструмент построения крупных сеток и микросеток</p>
+      <pre>
+        <code>.element {</code>
+          <code>  display: flex;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <!-- TODO Flexible Box Layout -->
+    <section class="slide">
+      <h2 class="shout">Flexible Box Layout</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Flexible Box Layout</h2>
+      <pre>
+        <code>.element {</code>
+          <code>  display: flex;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Флексбокс: главная и поперечные оси</h2>
+      <img src="/img/flexbox-1.png" width="100%" height="100%" alt="" style="max-width: 100%;height: auto;">
+      <p>Изображение взято с сайта <a href="https://htmlacademy.ru/courses/96/run/31#:~:text=%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%BE%D1%81%D1%8C%D1%8E%20flex%2D%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0%20%D1%8F%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F,%D0%BE%D1%81%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82%20%C2%AB%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%C2%BB%20%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F." target="_blank">htmlacademy.ru</a></p>
+    </section>
+
+    <section class="slide">
+      <h2>Флексбокс: главная и поперечные оси</h2>
+      <p>Cвойство <b>justify-content</b> распределяет элементы относительно главной оси</p>
+      <ul>
+        <li><b>flex-start</b> — элементы стоят в начале оси</li>
+        <li><b>flex-end</b> — элементы стоят в конце оси</li>
+        <li><b>center</b> — элементы по центру оси</li>
+        <li><b>space-between</b> — первый элемент располагается в начале, а последний — в конце. Между крайними элементами и флекс-контейнером отступа нет</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Флексбокс: главная и поперечные оси</h2>
+      <p>Элементы равномерно распределены вдоль главной оси</p>
+      <ul>
+
+        <li><b>space-around</b> — расстояние между крайними элементами и флекс-контейнером равно половине отступа между соседними флекс-элементами</li>
+        <li><b>space-evenly</b> — отступы между соседними элементами и краями флекс-контейнера равны</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Флексбокс: главная и поперечные оси</h2>
+      <p>Cвойство <b>align-items</b> распределяет элементы относительно поперечной оси</p>
+      <ol>
+        <li><b>stretch</b> — элементы растягиваются вдоль всей оси (по умолчанию)</li>
+        <li><b>flex-start</b> — элементы идут в начале оси</li>
+        <li><b>flex-end</b> — элементы идут в конце оси</li>
+        <li><b>center</b> — элементы в центре оси</li>
+        <li><b>baseline</b> — элементы размещены по базовой линии</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>Флексбокс: главная и поперечные оси</h2>
+      <p><b>baseline</b> — невидимая линия, которая проходит по нижней части букв</p>
+    </section>
+
+    <section class="slide">
+      <h2>Флексбокс: главная и поперечные оси</h2>
+      <p><b>align-self</b> — выравнивает <mark>отдельный</mark> элемент по поперечной оси</p>
+      <p>Значения <b>align-self</b> такие же, как у <b>align-items</b></p>
+    </section>
+
+    <section class="slide">
+      <h2>Флексбокс: главная и поперечные оси</h2>
+      <p>
+        <b>align-content</b> — выравнивает ряды элементов вдоль поперечной оси.</p>
+
+      <div class="columns two">
+        <div>
+          <ol>
+            <li>flex-start</li>
+            <li>flex-end</li>
+            <li>center</li>
+            <li>space-between</li>
+            <li>space-around</li>
+            <li>space-evenly</li>
+          </ol>
+        </div>
+        <div>
+          <ol>
+            <li>stretch</li>
+            <li>baseline</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Отличие align-content от align-items</h2>
+
+      <ul>
+        <li><b>align-items</b> выравнивает элементы внутри флекс-контейнера</li>
+        <li><b>align-content</b> выравнивает ряды</li>
+      </ul>
+
+      <p>Когда <b>align-content</b> задано другое значение (не stretch), оно перекрывает значения <b>align-items</b> и <b>align-self</b></p>
+    </section>
+
+    <section class="slide">
+      <h2>Отличие align-content от align-items</h2>
+      <pre>
+        <code>.class {</code>
+          <code>  display: flex;</code>
+          <code class="mark">  flex-wrap: wrap;</code>
+          <code>  align-content: flex-end;</code>
+          <code>  align-items: flex-start;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>flex-wrap</h2>
+      <pre>
+        <code>.class {</code>
+          <code>  display: flex;</code>
+          <code>  flex-wrap: wrap;</code>
+          <code>  align-content: flex-end;</code>
+          <code>  align-items: flex-start;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>flex-grow</h2>
+      <p><b>flex-grow</b> определяет, как элементы будут растягиваться внутри контейнера, когда есть свободное пространство</p>
+      <pre>
+        <code>.element-1 {</code>
+          <code>  flex-grow: 0;</code>
+       <code>}</code>
+        <code>.element-2 {</code>
+          <code>  flex-grow: 1;</code>
+       <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>flex-shrink</h2>
+      <p><b>flex-shrink</b> отвечает за гибкость и сжатие элементов, когда доступное пространство ограничено</p>
+      <pre>
+        <code>.element-1 {</code>
+          <code>  flex-shrink: 0;</code>
+       <code>}</code>
+        <code>.element-2 {</code>
+          <code>  flex-shrink: 1;</code>
+       <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>flex-basis </h2>
+      <p><b>flex-basis </b> задает начальный размер элемента перед распределением доступного пространства</p>
+
+      <div class="columns three">
+        <pre>
+          <code>.element-1 {</code>
+            <code>  height: 300px;</code>
+            <code>  width: 300px;</code>
+            <code>  flex-basis: 500px;</code>
+          <code>}</code>
+        </pre>
+        <pre>
+          <code>.element-2 {</code>
+            <code>  height: 300px;</code>
+            <code>  width: 300px;</code>
+          <code>}</code>
+        </pre>
+        <pre>
+          <code>.element-3 {</code>
+            <code>  height: 300px;</code>
+            <code>  width: 300px;</code>
+          <code>}</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>order</h2>
+      <p><b>order</b> определяет порядок отображения элементов в контейнере</p>
+      <pre>
+        <code>.element-1 {</code>
+          <code>  order: 2;</code>
+        <code>}</code>
+        <code>.element-2 {</code>
+          <code>  order: 1;</code>
+        <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Флексы</h2>
+
+      <p>Свойство <b>flex</b> работает только для элементов, у которых значение свойства <b>display</b> установлено на <b>flex</b></p>
+
+      <pre>
+        <code>.element {</code>
+          <code class="mark">  display: flex;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Флексы</h2>
+
+      <p>Если элементы не помещаются в одну строку или колонку из-за ограничений ширины или высоты контейнера, используется свойство <b>flex-wrap</b> со значением <b>wrap</b></p>
+
+      <pre>
+        <code>.element {</code>
+          <code>  display: flex;</code>
+          <code class="mark">  flex-wrap: wrap;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Флексы</h2>
+
+      <p>Расположение элементов в HTML-файле не имеет решающего значения</p>
+
+      <pre>
+        <code>.element {</code>
+          <code>  display: flex;</code>
+          <code class="mark">  order: 2;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Флексы</h2>
+
+      <p>Во флексах есть понятие начала и конца, поэтому в браузерах с локалью <b>rtl (right-to-left)</b> все элементы будут автоматически расположены в реверсном порядке</p>
+    </section>
+
+    <section class="slide">
+      <h2>Где практиковаться</h2>
+      <ol>
+        <li><b><a href="https://flexboxfroggy.com/#ru" target="_blank">Flexbox froggy (ru)</a></b> — с помощью флексов нужно размещать лягушат на кувшинках</li>
+        <li><b><a href="http://www.flexboxdefense.com/" target="_blank">Flexbox Defense (en)</a></b> — игра в стиле Tower Defense</li>
+      </ol>
     </section>
 
     <section class="slide clear">
+      <h2>Практика</h2>
+
+      <ol>
+        <li>Выделить шапку, основной контент и подвал</li>
+        <li>Выделить блоки в шапке </li>
+        <li>Выделить блоки в подвале </li>
+        <li>Выделить блоки в основном контенте </li>
+      </ol>
+    </section>
+
+    <!-- TODO Grid Layout -->
+    <section class="slide">
+      <h2 class="shout">Grid Layout</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Гриды</h2>
+      <p><b>CSS Grid Layout</b> или просто <b>гриды</b> — это технология для раскладки элементов на веб-страницах.</p>
+      <p>Гриды дают возможность работать одновременно с двумя измерениями: горизонталью и вертикалью</p>
+      <pre>
+        <code>.element {</code>
+          <code class="mark">  display: grid;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="slide clear">
       <h2 class="shout">Практика</h2>
+    </section>
+
+    <!-- TODO Empty -->
+    <section class="slide">
+      <h2></h2>
     </section>
 
     <!-- TODO Материалы и ссылки -->

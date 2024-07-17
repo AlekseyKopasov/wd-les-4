@@ -23,3 +23,11 @@ mark.ignore {
   background-color: var(--color-blue-lighter);
   color: #ffffff;
 }
+
+.slide pre {
+  font-size: 20px;
+}
+
+.justify-end {
+  justify-items: flex-end;
+}
