@@ -31,3 +31,10 @@ mark.ignore {
 .justify-end {
   justify-items: flex-end;
 }
+
+cite.small {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.8;
+}
