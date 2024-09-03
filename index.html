@@ -28,6 +28,50 @@
       <h2 class="shout">CSS</h2>
     </section>
 
+    <!-- TODO CSS: введение -->
+    <section class="slide">
+      <h2>Отличие CSS от HTML</h2>
+      <p><b>HTML</b> — структурирование содержимого страницы</p>
+      <p><b>CSS</b> — форматирование данного, уже структурированного, содержимого</p>
+    </section>
+    <section class="slide">
+      <h2>Преимущества CSS</h2>
+      <ul>
+        <li>возможность управления отображения множества документов одной таблицей</li>
+        <li>контроль над внешним видом страниц</li>
+        <li>возможность настраивать различное отображение</li>
+        <li>большое количество технических возможностей для дизайна</li>
+      </ul>
+    </section>
+    <section class="slide">
+      <h2>Внедрение CSS в HTML документ</h2>
+      <ol>
+        <li>С помощью тегов &lt;style&gt; &lt;/style&gt;</li>
+        <li>С помощью атрибута style=&quot; &quot;</li>
+        <li>С помощью тега &lt;link&gt;</li>
+      </ol>
+    </section>
+    <section class="slide">
+      <h2>Историческая справка</h2>
+      <ol>
+        <li><b>1967 год</b>: Вильям Тьюнниклифф обнародовал идею использовать языки разметки в компьютерной обработке текстов</li>
+        <li><b>1973 год</b>: Чарльз Голдфарб представляет язык GML</li>
+        <li><b>1986 год</b>: опубликован как международный стандарт язык SGML</li>
+        <li><b>1991 год</b>: создание HTML</li>
+        <li><b>1994 год</b>: Хокон Виум Ли (норв. Håkon Wium Lie) предложил концепцию каскадных таблиц стилей</li>
+      </ol>
+    </section>
+    <section class="slide">
+      <h2>Версии CSS</h2>
+      <ol>
+        <li><b>CSS 1</b> — 17 декабря 1996 года</li>
+        <li><b>CSS 2</b> — 12 мая 1998 года </li>
+        <li><b>CSS 2.1</b> — 8 сентября 2009 года </li>
+        <li><b>CSS 3</b> — находится в разработке с 1999 года</li>
+        <li>CSS 4 не будет <del>но есть 5, 6, 7, 8</del></li>
+      </ol>
+    </section>
+
     <!-- TODO CSS: правила -->
     <section class="slide">
       <h2>Cascading Style Sheets (CSS) </h2>
@@ -159,6 +203,20 @@
       </ol>
     </section>
 
+    <!-- TODO Псевдоклассы -->
+    <section class="slide">
+      <h2>Псевдоклассы</h2>
+      <p><b>Псевдокласс</b> — это селектор, который выбирает элементы, находящиеся в специфическом состоянии</p>
+      <pre><code>:pseudo-class-name</code></pre>
+    </section>
+
+    <!-- TODO Псевдоэлементы -->
+    <section class="slide">
+      <h2>Псевдоэлементы</h2>
+      <p><b>Псевдоэлемент</b> — это элементы, которых не существует в HTML-разметке. Оведут себя сходным образом с псевоклассами, однако действуют так, как если бы вы добавили в разметку целый новый HTML-элемент, а не применили класс к существующим элементам</p>
+      <pre><code>::pseudo-element-name</code></pre>
+    </section>
+
     <!-- TODO CSS: комбинирование и группировка -->
     <section class="slide">
       <h2>CSS селекторы: комбинирование и группировка</h2>
@@ -241,6 +299,20 @@
       </pre>
     </section>
 
+    <!-- TODO Как работает CSS? -->
+    <section class="slide">
+      <h2>Как работает CSS?</h2>
+      <figure>
+        <img src="img/browser_simple_rendering_pipeline__ru.png" width="100%" height="100%" alt="" style="
+        max-height: 370px;
+        margin: 0 auto;
+        display: flex;
+        object-fit: contain;
+      ">
+        <cite class="small" >Источник: <a href="https://developer.mozilla.org/ru/docs/Learn/CSS/First_steps/How_CSS_works" target="_blank">developer.mozilla.org</a></cite>
+      </figure>
+    </section>
+
     <!-- TODO CSS: специфичность, наследование, каскад -->
     <section class="slide">
       <h2>CSS: специфичность, наследование, каскад</h2>
@@ -321,9 +393,9 @@
       </div>
     </section>
 
-    <!-- TODO CSS: переменные и функции -->
+    <!-- TODO CSS: Custom property -->
     <section class="slide">
-      <h2>Переменные и функции</h2>
+      <h2>Custom property</h2>
 
       <p><b><mark>Custom property</mark></b> — CSS переменные (пользовательские CSS-свойства)</p>
       <div class="columns two justify-end">
@@ -347,9 +419,7 @@
     </section>
 
     <section class="slide">
-      <h2>Переменные и функции</h2>
-
-      <mark>Функции в CSS</mark>
+      <h2>Функции</h2>
       <ol>
         <li><b>url()</b> — для загрузки ресурсов</li>
         <li><b>attr()</b> — позволяет брать содержимое атрибута</li>
@@ -429,6 +499,36 @@
           <code>  display: flex;</code>
         <code>}</code>
       </pre>
+    </section>
+
+    <!-- TODO Изменение размеров в CSS -->
+    <section class="slide">
+      <h2>Изменение размеров в CSS</h2>
+      <ol>
+        <li>Размер по умолчанию</li>
+        <li>Присваивание размера</li>
+        <li>Проценты</li>
+        <li>Минимальные и максимальные размеры</li>
+        <li>Единицы вьюпорта</li>
+      </ol>
+    </section>
+    <section class="slide">
+      <h2>Viewport</h2>
+      <p><b>Вьюпо́рт</b> — это видимая область вашей страницы в браузере</p>
+    </section>
+
+    <!-- TODO Отладка CSS -->
+    <section class="slide">
+      <h2>Отладка CSS</h2>
+      <p>C тем, что происходит помогут разобраться DevTools (инструменты разработчика) </p>
+      <p>Как открыть:</p>
+      <ol>
+        <li><b>Ctrl + Shift + I</b>: все, кроме IE</li>
+        <li><b>F12</b></li>
+        <li><b>⌘ + ⌥ + I</b>: Mac OS X</li>
+      </ol>
+
+
     </section>
 
     <!-- TODO Flexible Box Layout -->
@@ -1112,8 +1212,13 @@
     </section>
 
 
-    <section class="slide clear">
-      <h2 class="shout">Практика</h2>
+    <section class="slide">
+      <h2>Практика</h2>
+      <ol>
+        <li>Выделить в макете крупные сетки с помощью флексов</li>
+        <li>Выделить в макете мелкие сетки компонентов с помощью флексов</li>
+        <li>Выделить в макете грид-контейнеры</li>
+      </ol>
     </section>
 
     <!-- TODO Материалы и ссылки -->
