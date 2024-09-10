@@ -75,7 +75,7 @@
     <!-- TODO CSS: правила -->
     <section class="slide">
       <h2>Cascading Style Sheets (CSS) </h2>
-      <p><b>CSS (Каскадные Таблицы Стилей)</b> — это язык таблицы стилей</p>
+      <p><b>CSS (Каскадные Таблицы Стилей)</b> — это язык таблицы стилей. Он позволяет применять стили к элементам в документах HTML</p>
       <pre>
         <code>.my-element {</code>
           <code>  font-size: 18px;</code>
@@ -234,18 +234,24 @@
       <h2>CSS селекторы: группировка</h2>
       <mark>Селекторы записываются через запятую</mark>
       <div class="columns two justify-end">
-        <pre>
-          <code>.element1 { color: red; }</code>
-          <code>.element2 { color: red; }</code>
-          <code>.element3 { color: red; }</code>
-        </pre>
-        <pre>
-            <code>.element1,</code>
-            <code>.element2,</code>
-            <code>.element3 {</code>
-              <code>  color: red;</code>
-           <code>}</code>
-        </pre>
+        <div>
+          <h3>До</h3>
+          <pre>
+            <code>.element1 { color: red; }</code>
+            <code>.element2 { color: red; }</code>
+            <code>.element3 { color: red; }</code>
+          </pre>
+        </div>
+        <div>
+          <h3>После</h3>
+          <pre>
+              <code>.element1,</code>
+              <code>.element2,</code>
+              <code>.element3 {</code>
+                <code>  color: red;</code>
+             <code>}</code>
+          </pre>
+        </div>
       </div>
     </section>
 
@@ -253,7 +259,7 @@
       <h2>CSS селекторы: объединение</h2>
       <mark>Селекторы записываются слитно</mark>
       <pre>
-        <code>.class1<mark class="important">.</mark>class2 {</code>
+        <code>.class1<mark class="ignore">.</mark>class2 {</code>
           <code>  color: red;</code>
         <code>}</code>
         </pre>
@@ -309,7 +315,7 @@
         display: flex;
         object-fit: contain;
       ">
-        <cite class="small" >Источник: <a href="https://developer.mozilla.org/ru/docs/Learn/CSS/First_steps/How_CSS_works" target="_blank">developer.mozilla.org</a></cite>
+        <cite class="small" ><a href="https://developer.mozilla.org/ru/docs/Learn/CSS/First_steps/How_CSS_works" target="_blank">developer.mozilla.org</a></cite>
       </figure>
     </section>
 
@@ -333,7 +339,7 @@
     <section class="slide">
       <h2>Специфичность</h2>
       <img src="img/specif.png" width="100%" alt="">
-      <cite class="small" >Источник <a href="https://webformyself.com/koncepcii-css-edinoe-rukovodstvo/" target="_blank">WebforMyself.com</a></cite>
+      <cite class="small" ><a href="https://webformyself.com/koncepcii-css-edinoe-rukovodstvo/" target="_blank">WebforMyself.com</a></cite>
     </section>
 
     <section class="slide">
@@ -434,7 +440,7 @@
     <section class="slide">
       <h2>Боксовая модель</h2>
       <img src="img/box-model.png" width="100%" height="100%" alt="" style="max-width: 50%;height: auto;">
-      <cite class="small">Источник <a href="https://doka.guide/css/box-model/" target="_blank">doka.guide</a></cite>
+      <cite class="small"><a href="https://doka.guide/css/box-model/" target="_blank">doka.guide</a></cite>
     </section>
 
     <section class="slide">
@@ -548,7 +554,7 @@
     <section class="slide">
       <h2>Флексбокс: главная и поперечные оси</h2>
       <img src="img/flexbox-1.png" width="100%" height="100%" alt="" style="max-width: 100%;height: auto;">
-      <cite class="small">Источник <a href="https://htmlacademy.ru/courses/96/run/31#:~:text=%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%BE%D1%81%D1%8C%D1%8E%20flex%2D%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0%20%D1%8F%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F,%D0%BE%D1%81%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82%20%C2%AB%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%C2%BB%20%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F." target="_blank">htmlacademy.ru</a></сite>
+      <cite class="small"><a href="https://htmlacademy.ru/courses/96/run/31#:~:text=%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%BE%D1%81%D1%8C%D1%8E%20flex%2D%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0%20%D1%8F%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F,%D0%BE%D1%81%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82%20%C2%AB%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%C2%BB%20%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F." target="_blank">htmlacademy.ru</a></сite>
     </section>
 
     <section class="slide">
@@ -632,18 +638,6 @@
     </section>
 
     <section class="slide">
-      <h2>Отличие align-content от align-items</h2>
-      <pre>
-        <code>.class {</code>
-          <code>  display: flex;</code>
-          <code class="mark">  flex-wrap: wrap;</code>
-          <code>  align-content: flex-end;</code>
-          <code>  align-items: flex-start;</code>
-        <code>}</code>
-      </pre>
-    </section>
-
-    <section class="slide">
       <h2>flex-wrap</h2>
       <pre>
         <code>.class {</code>
@@ -722,7 +716,7 @@
     </section>
 
     <section class="slide">
-      <h2>Флексы</h2>
+      <h2>Flexbox</h2>
 
       <p>Свойство <b>flex</b> работает только для элементов, у которых значение свойства <b>display</b> установлено на <b>flex</b></p>
 
@@ -734,7 +728,7 @@
     </section>
 
     <section class="slide">
-      <h2>Флексы</h2>
+      <h2>Flexbox</h2>
 
       <p>Если элементы не помещаются в одну строку или колонку из-за ограничений ширины или высоты контейнера, используется свойство <b>flex-wrap</b> со значением <b>wrap</b></p>
 
@@ -747,7 +741,7 @@
     </section>
 
     <section class="slide">
-      <h2>Флексы</h2>
+      <h2>Flexbox</h2>
 
       <p>Расположение элементов в HTML-файле не имеет решающего значения</p>
 
@@ -760,7 +754,7 @@
     </section>
 
     <section class="slide">
-      <h2>Флексы</h2>
+      <h2>Flexbox</h2>
 
       <p>Во флексах есть понятие <b>начала (start)</b> и <b>конца (end)</b>, поэтому в браузерах с локалью <b>rtl (right-to-left)</b> все элементы будут автоматически расположены в реверсном порядке</p>
     </section>
@@ -785,7 +779,7 @@
     </section>
 
     <!-- TODO Grid Layout -->
-    <section class="slide">
+    <section class="slide clear">
       <h2 class="shout">Grid Layout</h2>
     </section>
 
@@ -852,7 +846,7 @@
 
     <section class="slide">
       <h2>grid-template-rows</h2>
-      <p>Будет создано 3 колонки</p>
+      <p>Будет создано 3 ряда</p>
 
       <pre>
         <code>.container {</code>
@@ -1005,6 +999,32 @@
     </section>
 
     <section class="slide">
+      <h2>grid</h2>
+      <p>Шорткат, позволяющий задать значения всему и сразу</p>
+      <ul>
+        <li>grid-template-rows</li>
+        <li>grid-template-columns</li>
+        <li>grid-template-areas</li>
+        <li>grid-auto-rows</li>
+        <li>grid-auto-columns</li>
+        <li>grid-auto-flow</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>grid</h2>
+
+      <pre>
+        <code>.container {</code>
+          <code>  grid:</code>
+            <code>    [row1-start] "header header header" 1fr [row1-end]</code>
+            <code>    [row2-start] "footer footer footer" 100px [row2-end]</code>
+            <code>    / auto 10px auto;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
       <h2>justify-content</h2>
       <p>Выравнивает элементы вдоль оси строки</p>
 
@@ -1080,32 +1100,6 @@
     <section class="slide">
       <h2>align-self</h2>
       <p>Выравнивает отдельные грид-элементы</p>
-    </section>
-
-    <section class="slide">
-      <h2>grid</h2>
-      <p>Шорткат, позволяющий задать значения всему и сразу</p>
-      <ul>
-        <li>grid-template-rows</li>
-        <li>grid-template-columns</li>
-        <li>grid-template-areas</li>
-        <li>grid-auto-rows</li>
-        <li>grid-auto-columns</li>
-        <li>grid-auto-flow</li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2>grid</h2>
-
-      <pre>
-        <code>.container {</code>
-          <code>  grid:</code>
-            <code>    [row1-start] "header header header" 1fr [row1-end]</code>
-            <code>    [row2-start] "footer footer footer" 100px [row2-end]</code>
-            <code>    / auto 10px auto;</code>
-        <code>}</code>
-      </pre>
     </section>
 
     <section class="slide">
